@@ -1,0 +1,28 @@
+{
+  "name": "expect-async",
+  "version": "0.1.0",
+  "description": "An asynchronous wrapper for expect.",
+  "main": "bin/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youngspe/expect-async"
+  },
+  "scripts": {
+    "prepublish": "gulp build",
+    "pretest": "gulp build",
+    "test": "mocha bin/test.js"
+  },
+  "author": "youngspe",
+  "license": "MIT",
+  "typings": "bin/expect-async.d.ts",
+  "devDependencies": {
+    "child-process-promise": "^1.1.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "tsd": "^0.6.5",
+    "typescript": "^1.7.5"
+  },
+  "dependencies": {
+    "expect": "^1.13.4"
+  }
+}
